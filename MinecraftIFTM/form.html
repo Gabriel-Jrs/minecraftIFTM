@@ -2,14 +2,14 @@
 <html lang="Pt-Br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario para inscriçao</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario para inscrição</title>
 </head>
 
 <body>
     <div>
-        <h1>Perguntas para a incrição no servidor</h1>
+        <h1 class="titulos">Perguntas para a incrição no servidor</h1>
         <div>
             <p>O formulário foi estruturado com o objetivo de garantir uma participação segura, organizada e
                 significativa dentro do servidor, respeitando tanto os princípios da educação quanto o potencial lúdico
@@ -19,7 +19,7 @@
                 educacional, além de manter um canal de comunicação eficaz. O nome de usuário no Minecraft também é
                 solicitado, já que é através dele que o acesso ao servidor será concedido.</p>
             <div>
-                
+
                 <form>
                     <div>
                         <label for="pergunta1">Nome completo</label><br>
@@ -31,36 +31,126 @@
                         <label for="pergunta3">E-mail de contato</label><br>
                         <input type="text" id="pergunta3" name="pergunta3"><br>
 
-                        <label for="pergunta4">Você é estudante do IFTM?</label><br>
-                        <input type="text" id="pergunta4" name="pergunta4"><br>
+                        <label>Você é estudante do IFTM?</label><br>
 
-                        <label for="pergunta5">Se sim, informe o campus e o curso</label><br>
-                        <input type="text" id="pergunta5" name="pergunta5"><br>
+                        <input type="radio" id="estudanteSim" name="estudanteIFTM" value="SIM">
+                        <label for="estudanteSim">SIM</label><br>
 
+                        <input type="radio" id="estudanteNao" name="estudanteIFTM" value="NÃO">
+                        <label for="estudanteNao">NÃO</label><br>
+                    </div>
+
+                    <div id="campusDiv" style="display:none; margin-top:10px;">
+                        <label>Qual campus do IFTM você estuda?</label><br>
+
+                        <input type="radio" id="uberlandia_centro" name="campus" value="Uberlândia Centro">
+                        <label for="uberlandia_centro">Uberlândia (Centro)</label><br>
+
+                        <input type="radio" id="uberlandia_avancado" name="campus" value="Uberlândia Avançado">
+                        <label for="uberlandia_avancado">Uberlândia (Avançado)</label><br>
+
+                        <input type="radio" id="campina_verde" name="campus" value="Campina Verde">
+                        <label for="campina_verde">Campina Verde</label><br>
+
+                        <input type="radio" id="ituiutaba" name="campus" value="Ituiutaba">
+                        <label for="ituiutaba">Ituiutaba</label><br>
+
+                        <input type="radio" id="paracatu" name="campus" value="Paracatu">
+                        <label for="paracatu">Paracatu</label><br>
+
+                        <input type="radio" id="patos_de_minas" name="campus" value="Patos de Minas">
+                        <label for="patos_de_minas">Patos de Minas</label><br>
+
+                        <input type="radio" id="patrocinio" name="campus" value="Patrocínio">
+                        <label for="patrocinio">Patrocínio</label><br>
+
+                        <input type="radio" id="coromandel" name="campus" value="Coromandel">
+                        <label for="coromandel">Coromandel (Unidade Remota)</label><br>
+
+                        <input type="radio" id="joao_pinheiro" name="campus" value="João Pinheiro">
+                        <label for="joao_pinheiro">João Pinheiro (Unidade Remota)</label><br>
+
+                        <input type="radio" id="ibia" name="campus" value="Ibiá">
+                        <label for="ibia">Ibiá (Unidade Remota)</label><br>
+
+                        <input type="radio" id="perdizes" name="campus" value="Perdizes">
+                        <label for="perdizes">Perdizes (Unidade Remota)</label><br>
+                    </div>
+
+                    <div>
                         <label for="pergunta6">Nome de usuário Minecraft (Java ou Bedrock)</label><br>
                         <input type="text" id="pergunta6" name="pergunta6"><br>
                     </div>
+
                     <div>
                         <label for="pergunta7">Quais áreas do conhecimento mais te interessam?</label><br>
                         <input type="text" id="pergunta7" name="pergunta7"><br>
-
-                        <label for="pergunta8">Você tem interesse em participar de quais atividades?</label><br>
-                        <input type="text" id="pergunta8" name="pergunta8"><br>
                     </div>
-                    <label for="pergunta9">Você se compromete a manter um comportamento respeitoso e
-                        colaborativo?</label><br>
-                    <input type="text" id="pergunta9" name="pergunta9"><br>
+
                     <div>
-                        <label for="pergunta10">Confirmo minha autorização para uso educacional dos dados</label><br>
-                        <input type="text" id="pergunta10" name="pergunta10"><br>
+                        <label>Você tem interesse em participar de quais atividades?</label><br>
+
+                        <input type="radio" id="eletronica" name="curso" value="Eletrônica">
+                        <label for="eletronica">Eletrônica</label><br>
+
+                        <input type="radio" id="informatica" name="curso" value="Informática">
+                        <label for="informatica">Informática</label><br>
+
+                        <input type="radio" id="administracao" name="curso" value="Administração">
+                        <label for="administracao">Administração</label><br>
+
+                        <input type="radio" id="contabilidade" name="curso" value="Contabilidade">
+                        <label for="contabilidade">Contabilidade</label><br>
+                    </div>
+
+                    <label>Você se compromete a manter um comportamento respeitoso e colaborativo?</label><br>
+
+                    <input type="radio" id="compromissoSim" name="compromisso" value="SIM">
+                    <label for="compromissoSim">SIM</label><br>
+
+                    <input type="radio" id="compromissoNao" name="compromisso" value="NÃO">
+                    <label for="compromissoNao">NÃO</label><br>
+
+                    <div>
+                        <label>Confirmo minha autorização para uso educacional dos dados</label><br>
+
+                        <input type="radio" id="autorizoSim" name="autorizacao" value="SIM">
+                        <label for="autorizoSim">Confirmo</label><br>
+
+                        <input type="radio" id="autorizoNao" name="autorizacao" value="NÃO">
+                        <label for="autorizoNao">Não Confirmo</label><br>
 
                         <label for="pergunta11">Gostaria de deixar alguma sugestão ou comentário?</label><br>
                         <input type="text" id="pergunta11" name="pergunta11"><br>
                     </div>
+
+                    <button type="submit">Enviar inscrição</button>
+
                 </form>
             </div>
         </div>
     </div>
+
+    <script>
+        const estudanteSim = document.getElementById('estudanteSim');
+        const estudanteNao = document.getElementById('estudanteNao');
+        const campusDiv = document.getElementById('campusDiv');
+
+        function toggleCampus() {
+            if (estudanteSim.checked) {
+                campusDiv.style.display = 'block';
+            } else {
+                campusDiv.style.display = 'none';
+                // limpa seleção quando escondido
+                campusDiv.querySelectorAll('input[type=radio]').forEach(el => el.checked = false);
+            }
+        }
+
+        estudanteSim.addEventListener('change', toggleCampus);
+        estudanteNao.addEventListener('change', toggleCampus);
+
+        window.addEventListener('DOMContentLoaded', toggleCampus);
+    </script>
 </body>
 
 </html>
