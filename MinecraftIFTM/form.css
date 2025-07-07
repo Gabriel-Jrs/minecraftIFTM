@@ -1,0 +1,100 @@
+/* formulario.css */
+
+/* Fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilização geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #97d957; /* verde claro */
+  color: #fff;
+}
+
+/* Container principal */
+.container-formulario {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Título estilizado */
+.titulos {
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 40px;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+
+/* Texto explicativo */
+.descricao-formulario p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Blocos de perguntas */
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* Campos de texto */
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões de rádio personalizados */
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+label[for^="estudante"],
+label[for^="campus"],
+label[for^="curso"],
+label[for^="compromisso"],
+label[for^="autorizo"] {
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+/* Botão de envio */
+.botao-enviar {
+  display: block;
+  background-color: #f
