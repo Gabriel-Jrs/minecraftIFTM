@@ -1,0 +1,207 @@
+/* contatos.css */
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-container h1 {
+  font-family: 'Spectral', serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.header-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Introdução */
+.intro {
+  max-width: 1000px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card .role {
+  display: block;
+  font-size: 16px;
+  color: #a3ffa3;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #dddddd;
+  line-height: 1.5;
+}
+
+/* Ícones sociais */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #1a1a1a;
+  background-color: #76ff03;
+  display: inline-block;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #64dd17;
+}
+
+/* Formulário de feedback */
+.feedback {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feedback h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.feedback p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.feedback form {
+  margin-top: 20px;
+}
+
+.feedback label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #a3ffa3;
+}
+
+.feedback textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.feedback button {
+  background-color: #76ff03;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background-color: #64dd17;
+}
+
+.feedback-summary {
+  margin-top: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .header-container h1 {
+    font-size: 32px;
+  }
+
+  .intro h2, .feedback h2 {
+    font-size: 22px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+}
