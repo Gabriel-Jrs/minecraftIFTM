@@ -1,0 +1,95 @@
+/* server.css */
+
+/* Geral */
+body.corpo-pagina {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #1a1a1a; /* fundo escuro */
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Títulos */
+.secao-titulo {
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fdd835; /* amarelo vibrante */
+}
+
+/* Seções */
+.secao-descricao,
+.secao-comunidade,
+.secao-instrucoes,
+.secao-ambientacao,
+.secao-instituicao,
+.secao-atualizacoes,
+.secao-memoria-colaboracao {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Texto geral */
+.descricao-servidor,
+.descricao-comunidade,
+.descricao-instituicao {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #eeeeee;
+}
+
+/* Instruções */
+.instrucoes-inicio {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.lista-instrucoes {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.item-instrucao {
+  margin-bottom: 8px;
+  color: #cccccc;
+}
+
+.ip-servidor {
+  font-weight: bold;
+  color: #4dd0e1; /* azul claro */
+}
+
+/* Links e ênfases */
+a {
+  color: #fdd835;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 22px;
+  }
+
+  .secao-descricao,
+  .secao-comunidade,
+  .secao-instrucoes,
+  .secao-ambientacao,
+  .secao-instituicao,
+  .secao-atualizacoes,
+  .secao-memoria-colaboracao {
+    padding: 15px;
+  }
+}
