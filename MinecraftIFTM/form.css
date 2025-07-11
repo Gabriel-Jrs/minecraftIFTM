@@ -1,100 +1,140 @@
-/* formulario.css */
-
-/* Fonte personalizada */
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@400;600&display=swap');
-
-/* Estilização geral */
 body {
   margin: 0;
   padding: 0;
+  background-image: url('https://wallpapercave.com/wp/wp5929580.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
-  background-color: #97d957; /* verde claro */
-  color: #fff;
+  color: #f1f1f1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 /* Container principal */
 .container-formulario {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  background-color: rgba(20, 20, 20, 0.75);
+  border: 2px solid #4CAF50;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.4);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
 
-/* Título estilizado */
+/* Título principal */
 .titulos {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
   text-align: center;
-  font-family: 'Chewy', cursive;
-  font-size: 40px;
-  color: #2c2c2c;
-  margin-bottom: 30px;
+  color: #B6FF3D;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px #000;
 }
 
-/* Texto explicativo */
+/* Texto descritivo */
 .descricao-formulario p {
-  font-size: 16px;
-  color: #ffffff;
-  margin-bottom: 30px;
+  font-size: 15px;
   line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 30px;
+  color: #eaeaea;
 }
 
 /* Blocos de perguntas */
-form label {
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 5px;
+.bloco-informacoes-pessoais,
+.bloco-campus,
+.bloco-minecraft,
+.bloco-interesse,
+.bloco-atividades,
+.bloco-comportamento,
+.bloco-autorizacao {
+  margin-bottom: 25px;
 }
 
-/* Campos de texto */
+/* Labels */
+label {
+  font-weight: bold;
+  color: #B6FF3D;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Campos de entrada */
 input[type="text"] {
   width: 100%;
-  padding: 10px 15px;
-  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #4CAF50;
   border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 14px;
 }
 
-/* Botões de rádio personalizados */
+/* Inputs de rádio */
 input[type="radio"] {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
   margin-right: 8px;
-  cursor: pointer;
-  background-color: #fff;
-}
-
-input[type="radio"]:checked::before {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background-color: #333;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-}
-
-label[for^="estudante"],
-label[for^="campus"],
-label[for^="curso"],
-label[for^="compromisso"],
-label[for^="autorizo"] {
-  font-weight: normal;
-  display: inline-block;
-  margin-left: 5px;
-  color: #ffffff;
+  transform: scale(1.2);
 }
 
 /* Botão de envio */
 .botao-enviar {
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #388E3C;
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
   display: block;
-  background-color: #f
+  margin: 30px auto 0;
+}
+
+.botao-enviar:hover {
+  background-color: #66bb6a;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.botao-voltar {
+  font-size: 16px;
+  background-color: #388E3C;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  border: 2px solid #2e7d32;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 10;
+}
+
+.botao-voltar:hover {
+  background-color: #66bb6a;
+  color: #000;
+  transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
