@@ -1,6 +1,7 @@
 # minecraftIFTM
 https://www.canva.com/design/DAGrS6QP8x0/wN8ZU441HCEgyKOL2LF_8g/edit?utm_content=DAGrS6QP8x0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-Durante o desenvolvimento do site do projeto Blocos do Saber, começamos com um wireframe simples, utilizando cores sólidas e padrões visuais básicos. O objetivo inicial era estruturar a navegação e testar a disposição dos elementos — focando mais na funcionalidade do que na estética.
+
+Durante o desenvolvimento do site do projeto IFTMundo, começamos com um wireframe simples, utilizando cores sólidas e padrões visuais básicos. O objetivo inicial era estruturar a navegação e testar a disposição dos elementos — focando mais na funcionalidade do que na estética.
 
 No entanto, ao avançar para a versão final, buscamos criar uma experiência visual mais envolvente e imersiva, alinhada com a proposta do Minecraft e com o espírito criativo do projeto. Para isso, realizamos melhorias importantes:
 
